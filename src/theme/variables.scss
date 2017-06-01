@@ -28,8 +28,18 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  colorTabBackground: #1c1c1c,
 );
+
+$colorTabInactive: #7b7b7b;
+$colorTabActive: #fff;
+
+
+$tabs-md-tab-text-color:          $colorTabInactive;
+$tabs-md-tab-text-color-active :  $colorTabActive;
+$tabs-md-tab-icon-color:          $colorTabInactive;
+$tabs-md-tab-icon-color-active:   $colorTabActive;
 
 
 // App iOS Variables
