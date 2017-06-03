@@ -86,3 +86,18 @@ $tabs-md-tab-icon-color-active:   $colorTabActive;
 
 @import "roboto";
 @import "noto-sans";
+
+//Gotham Fonts
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../assets/fonts/Gotham-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../assets/fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

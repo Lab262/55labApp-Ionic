@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TimelinePage } from '../pages/timeline/timeline';
 import { BenefitsPage } from '../pages/benefits/benefits';
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TimelinePage,
     BenefitsPage,
     MyAccountPage,
-    NotificationsPage
+    NotificationsPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TimelinePage,
     BenefitsPage,
     MyAccountPage,
-    NotificationsPage
+    NotificationsPage,
+    LoginPage
   ],
   providers: [
     StatusBar,

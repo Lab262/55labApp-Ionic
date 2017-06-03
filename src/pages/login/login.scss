@@ -1,0 +1,74 @@
+page-login {
+  .getstart{
+    background-image: url('../assets/images/backgroundLogin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title {
+      height: auto;
+      width: 75%;
+      margin:auto;
+      margin-left: 10.13vw;
+      margin-top: 39.28vh;
+      white-space: pre-line;
+
+      color: white;
+      font-family: "Gotham-Bold";
+      font-size:8.2vw;
+      line-height: 10.6vw;
+      background: clear;
+
+    }
+
+    .description {
+      height: auto;
+      width: 78%;
+      margin:auto;
+      margin-left: 10.13vw;
+      margin-top: 6vh;
+      white-space: pre-line;
+
+      color: white;
+      font-family: "Gotham-Book";
+      font-size:3.73vw;
+      line-height: 5.3vw;
+      background: clear;
+
+    }
+
+    .containerButtons {
+      background: none;
+      margin-top: 9.9vh;
+
+
+      .leftButton {
+        height: 6.74vh;
+        width: 41vw;
+        background: black;
+        text-transform: none;
+        margin: auto;
+        margin-left: 5.6vw;
+        margin-right: 6.6vw;
+        border-radius: 5px;
+
+        color: white;
+        font-family: "Gotham-Book";
+        font-size:4.1vw;
+      }
+
+      .rightButton {
+        height: 6.74vh;
+        width: 41vw;
+        background: white;
+        text-transform: none;
+        margin: auto;
+        border-radius: 5px;
+
+        color: black;
+        font-family: "Gotham-Bold";
+        font-size:4.1vw;
+
+      }
+    }
+  }
+}
