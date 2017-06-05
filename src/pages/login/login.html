@@ -1,13 +1,13 @@
-<ion-content class="getstart">
+<ion-content class="background-image">
 
   <ion-label class="title">{{title}}</ion-label>
   <ion-label class="description">{{description}}</ion-label>
 
   <div class="containerButtons">
-    <button ion-button item-left class="leftButton">
+    <button ion-button item-left class="leftButton" (click)="callRegisterPage()">
       {{buttonFirstAccessTitle}}
     </button>
-    <button ion-button item-right class="rightButton">
+    <button ion-button item-right class="rightButton" (click)="callLoginPage()">
       {{buttonLoginTitle}}
     </button>
   </div>

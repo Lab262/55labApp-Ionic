@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { LoginPage } from '../pages/login/login';
+import { AccessFormPage } from '../pages/access-form/access-form';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TimelinePage } from '../pages/timeline/timeline';
 import { BenefitsPage } from '../pages/benefits/benefits';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BenefitsPage,
     MyAccountPage,
     NotificationsPage,
-    LoginPage
+    LoginPage,
+    AccessFormPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BenefitsPage,
     MyAccountPage,
     NotificationsPage,
-    LoginPage
+    LoginPage,
+    AccessFormPage
   ],
   providers: [
     StatusBar,

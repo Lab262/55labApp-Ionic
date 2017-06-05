@@ -1,0 +1,110 @@
+page-access-form {
+
+  .background-image-blurred{
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/backgroundLogin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-filter: blur(9px);
+    -moz-filter: blur(9px);
+    -o-filter: blur(9px);
+    -ms-filter: blur(9px);
+    filter: blur(9px);
+    z-index:-1;
+    position: absolute;
+  }
+
+  .button-back{
+    width: 9.8vw;
+    height: 4.04vh;
+    margin-left: 6.6vw;
+    margin-top: 4.64vh;
+    border: none;
+
+    color: $colorButtonBlack;
+    font-family: "Gotham-Book";
+    font-size:3.2vw;
+    text-transform: none;
+    padding-top: 2vh;
+  }
+
+  .view-detail{
+    background: black;
+    width: 6.4vw;
+    height: 0.6vh;
+    margin-left: 6.6vw;
+    margin-top: -4.64vh;
+  }
+
+  form {
+    background: clear;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26vh;
+
+    ion-input {
+      background: clear;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      margin-top: 7.5vh;
+
+      color: white;
+      font-family: "Gotham-Book";
+      font-size:4.8vw;
+      text-transform: none;
+    }
+
+    .detail-line {
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .button-forgot-password{
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    border: none;
+    background: clear;
+
+    color: $colorButtonWhite;
+    font-family: "Gotham-Book";
+    font-size:3.7vw;
+    text-transform: none;
+  }
+
+
+  .login-button {
+    height: 6.74vh;
+    width: 41vw;
+    background: white;
+    text-transform: none;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 6vh;
+
+    color: black;
+    font-family: "Gotham-Bold";
+    font-size:4.1vw;
+
+  }
+
+  .register-button {
+    height: 6.74vh;
+    width: 41vw;
+    background: black;
+    text-transform: none;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 6vh;
+
+    color: white;
+    font-family: "Gotham-Bold";
+    font-size:4.1vw;
+
+  }
+
+}

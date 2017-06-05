@@ -35,11 +35,22 @@ $colors: (
 $colorTabInactive: #7b7b7b;
 $colorTabActive: #fff;
 
+//Colors Buttons
+$colorButtonBlack : #1C1C1C;
+$colorButtonWhite:  #F7F7F7;
 
+
+//Subscribe variables
+
+// tabbar
 $tabs-md-tab-text-color:          $colorTabInactive;
 $tabs-md-tab-text-color-active :  $colorTabActive;
 $tabs-md-tab-icon-color:          $colorTabInactive;
 $tabs-md-tab-icon-color-active:   $colorTabActive;
+
+// form
+$text-input-placeholder-color:	      #FFFFFF;
+
 
 
 // App iOS Variables

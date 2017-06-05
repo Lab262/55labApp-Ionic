@@ -1,0 +1,39 @@
+<ion-content>
+
+  <div class="background-image-blurred"></div>
+  <button ion-button block outline class="button-back" (click)="backPage()">
+    {{titleButtonBack}}
+  </button>
+  <div class="view-detail"></div>
+
+
+  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+
+    <ion-input formControlName="cpf" type="text" placeholder={{placeholderCPF}}
+      [class.invalid]="!loginForm.controls.cpf.valid && loginForm.controls.cpf.dirty"></ion-input>
+    <div class="detail-line"></div>
+
+    <ion-input formControlName="email" type="text" placeholder={{placeholderEmail}}
+      [class.invalid]="!loginForm.controls.email.valid && loginForm.controls.email.dirty" *ngIf="isFormRegister">
+    </ion-input>
+    <div class="detail-line"></div>
+
+    <ion-input formControlName="password" type="password" placeholder={{placeholderPassword}}
+      [class.invalid]="!loginForm.controls.password.valid && loginForm.controls.password.dirty"></ion-input>
+    <div class="detail-line"></div>
+
+  </form>
+
+  <button ion-button block clear class="button-forgot-password" *ngIf="!isFormRegister">
+    {{titleButtonForgotPassword}}
+  </button>
+
+  <button ion-button block clear type="submit" class="login-button" *ngIf="!isFormRegister">
+    {{titleButtonLogin}}
+  </button>
+
+  <button ion-button block clear type="submit" class="register-button" *ngIf="isFormRegister">
+    {{titleButtonRegister}}
+  </button>
+
+</ion-content>
