@@ -63,29 +63,40 @@ export class AccessFormPage {
     if (!this.loginForm.valid){
       console.log(this.loginForm.value);
     } else {
-      this.parseProvider.loginUser(this.loginForm.value.cpf,
-          this.loginForm.value.password)
-      .then( success => {
-        this.loading.dismiss().then( () => {
-          this.navCtrl.setRoot(TabsPage);
-        });
-      }, error => {
-        this.loading.dismiss().then( () => {
-          let alert = this.alertCtrl.create({
-            message: error.message,
-            buttons: [
-              {
-                text: "Ok",
-                role: 'cancel'
-              }
-            ]
-          });
-          alert.present();
-        });
-      });
-      this.loading = this.loadingCtrl.create();
-      this.loading.present();
+      this.handlePromiseRequest(this.parseProvider.loginUser(this.loginForm.value.cpf,
+          this.loginForm.value.password));
     }
   }
 
+  singUp(){
+    if (!this.loginForm.valid){
+      console.log(this.loginForm.value);
+    } else {
+      this.handlePromiseRequest(this.parseProvider.createAccount(this.loginForm.value.cpf,
+          this.loginForm.value.email, this.loginForm.value.password));
+    }
+  }
+
+  handlePromiseRequest(promise: Promise<any>){
+    promise.then( success => {
+      this.loading.dismiss().then( () => {
+        this.navCtrl.setRoot(TabsPage);
+      });
+    }, error => {
+      this.loading.dismiss().then( () => {
+        let alert = this.alertCtrl.create({
+          message: error.message,
+          buttons: [
+            {
+              text: "Ok",
+              role: 'cancel'
+            }
+          ]
+        });
+        alert.present();
+      });
+    });
+    this.loading = this.loadingCtrl.create();
+    this.loading.present();
+  }
 }

@@ -27,6 +27,16 @@ export class ParseProvider {
   loginUser(username: string, pass: string): Promise<any>{
     return Parse.User.logIn(username, pass);
   }
+
+  createAccount(username: string, email: string, pass: string): Promise<any>{
+
+    var user = new Parse.User();
+    user.set("username", username);
+    user.set("password", pass);
+    user.set("email", email);
+
+    return user.signUp(null);
+  }
   // getGameScores(offset: number = 0, limit: number = 3): Promise<any> {
   //    return new Promise((resolve,reject) => {
   //       setTimeout(() => {

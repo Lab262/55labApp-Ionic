@@ -32,7 +32,7 @@
     {{titleButtonLogin}}
   </button>
 
-  <button ion-button block clear type="submit" class="register-button" *ngIf="isFormRegister">
+  <button ion-button block clear type="submit" class="register-button" *ngIf="isFormRegister" (click)="singUp()">
     {{titleButtonRegister}}
   </button>
 
