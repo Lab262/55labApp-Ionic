@@ -28,7 +28,7 @@
     {{titleButtonForgotPassword}}
   </button>
 
-  <button ion-button block clear type="submit" class="login-button" *ngIf="!isFormRegister">
+  <button ion-button block clear type="submit" class="login-button" *ngIf="!isFormRegister" (click)="login()">
     {{titleButtonLogin}}
   </button>
 

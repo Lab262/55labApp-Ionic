@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Loading, LoadingController, NavController, NavParams, AlertController } from 'ionic-angular';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { ParseProvider } from '../../providers/parse/parse'
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-access-form',
@@ -21,15 +23,13 @@ export class AccessFormPage {
 
   isFormRegister:boolean;
 
-  navController:NavController;
-
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public loadingCtrl: LoadingController,
     public alertCtrl: AlertController,
-    public formBuilder: FormBuilder) {
+    public formBuilder: FormBuilder,
+    public parseProvider: ParseProvider) {
 
-    this.navController = navCtrl;
     this.isFormRegister = navParams.get("isFormRegister");
     this.buildLoginForm(formBuilder);
 
@@ -55,12 +55,37 @@ export class AccessFormPage {
     }
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AccessFormPage');
+  backPage(){
+    this.navCtrl.pop({animation: 'ios-back-transition'});
   }
 
-  backPage(){
-    this.navController.pop({animation: 'ios-back-transition'});
+  login(){
+    if (!this.loginForm.valid){
+      console.log(this.loginForm.value);
+    } else {
+      this.parseProvider.loginUser(this.loginForm.value.cpf,
+          this.loginForm.value.password)
+      .then( success => {
+        this.loading.dismiss().then( () => {
+          this.navCtrl.setRoot(TabsPage);
+        });
+      }, error => {
+        this.loading.dismiss().then( () => {
+          let alert = this.alertCtrl.create({
+            message: error.message,
+            buttons: [
+              {
+                text: "Ok",
+                role: 'cancel'
+              }
+            ]
+          });
+          alert.present();
+        });
+      });
+      this.loading = this.loadingCtrl.create();
+      this.loading.present();
+    }
   }
 
 }

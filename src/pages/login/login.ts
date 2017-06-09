@@ -12,10 +12,8 @@ export class LoginPage {
   description:string = "Em nossa Rede você ainda poderá explorar todos os benefícios de participar da Network +55Lab.co.";
   buttonFirstAccessTitle:string = "Primeiro Acesso";
   buttonLoginTitle:string = "Login";
-  navController:NavController;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.navController = navCtrl;
   }
 
   ionViewDidLoad() {
