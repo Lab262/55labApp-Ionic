@@ -6,6 +6,7 @@ page-access-form {
     background-image: url('../assets/images/backgroundLogin.png');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
     -webkit-filter: blur(9px);
     -moz-filter: blur(9px);
