@@ -7,11 +7,10 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class TimelinePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  title:string = "Bem vindo a +55Lab.co Community, Vanessa";
+  haveImage:boolean = true;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TimelinePage');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
 }

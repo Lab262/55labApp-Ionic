@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ElementRef, ViewChild, Renderer} from '@angular/core';
 
 @Component({
   selector: 'header-view',
@@ -7,42 +7,35 @@ import { Component, Input } from '@angular/core';
 export class HeaderViewComponent {
 
   @Input('title') title: any;
-  @Input('haveImage') haveImage: boolean;
+  @Input('haveImage') haveImage:any;
   @Input('imageName') imageName: any = "default-profile.jpeg";
 
+  @ViewChild('imageProfile') imageProfile:ElementRef;
 
   private imageUrl: string = 'url(../assets/images/';
-  private marginTopTitle = "9.7vh";
-  private marginTopTitleImage = "1.5vh";
-  private imageElement:HTMLElement;
-  private titleElement:HTMLElement;
 
-  constructor() {
+  constructor(public renderer: Renderer) {
   }
 
-  ngAfterViewInit() {
-    this.imageElement = document.getElementById("imageProfile");
-    this.titleElement = document.getElementById("title");
-
+  ngAfterViewInit(){
     //Revisar essa gambira do if de boolean
-    if (String(this.haveImage)==String(true)){
+    if (this.haveImage){
       this.configureHeaderTitleImage();
+      console.log("entrei no if");
     }else{
       this.configureHeaderTitle();
+      console.log("entrei no else");
     }
   }
 
-  configureHeaderTitle(){
-    this.imageElement.style.display = "none";
-    this.titleElement.style.marginTop = this.marginTopTitle;
-  }
-
   configureHeaderTitleImage(){
-    this.imageElement.style.display = "block";
     this.imageUrl = this.imageUrl + this.imageName + ')';
-    this.imageElement.style.backgroundImage = this.imageUrl;
-    this.titleElement.style.marginTop = this.marginTopTitleImage;
+    this.renderer.setElementStyle(this.imageProfile.nativeElement, "visibility", "visible");
+    this.renderer.setElementStyle(this.imageProfile.nativeElement, "backgroundImage", this.imageUrl);
   }
 
+  configureHeaderTitle(){
+    this.renderer.setElementStyle(this.imageProfile.nativeElement, "visibility", "hidden");
+  }
 
 }

@@ -7,11 +7,9 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class NotificationsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  title:string = "Notificações";
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad NotificationsPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
 }

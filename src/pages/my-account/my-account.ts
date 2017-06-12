@@ -7,11 +7,10 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class MyAccountPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  title:string = "Minha Conta +55lab.co";
+  haveImage = true;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyAccountPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
 }
