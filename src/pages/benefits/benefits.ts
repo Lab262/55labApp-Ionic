@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HeaderViewComponent } from '../../components/header-view/header-view';
 
 @Component({
   selector: 'page-benefits',
@@ -7,11 +8,14 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class BenefitsPage {
 
+  title:string = "Benefícios";
+  haveImage:boolean = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BenefitsPage');
+
   }
 
 }

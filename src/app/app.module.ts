@@ -14,6 +14,7 @@ import { NotificationsPage } from '../pages/notifications/notifications';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ParseProvider } from '../providers/parse/parse';
+import { HeaderViewComponent } from '../components/header-view/header-view';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ParseProvider } from '../providers/parse/parse';
     MyAccountPage,
     NotificationsPage,
     LoginPage,
-    AccessFormPage
+    AccessFormPage,
+    HeaderViewComponent
   ],
   imports: [
     BrowserModule,

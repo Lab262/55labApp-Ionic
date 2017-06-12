@@ -1,0 +1,46 @@
+header-view {
+
+  .content {
+
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+    background: $colorButtonWhite;
+    width: 100%;
+    height: 22.4vh;
+
+    .image {
+      margin: auto;
+      margin-right: 5.3vw;
+      margin-top: 5.3vw;
+      height: 9.3vw;
+      width: 9.3vw;
+      border-radius: 50%;
+      box-shadow: 0 0 3px #888888;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .title {
+      height: auto;
+      width: 90%;
+      margin:auto;
+      margin-top: 1.5vh;
+      white-space: pre-line;
+
+      color: $colorButtonBlack;
+      font-family: "Gotham-Bold";
+      font-size:8vw;
+      line-height: 10.6vw;
+      background: clear;
+
+    }
+
+  }
+
+
+
+}
