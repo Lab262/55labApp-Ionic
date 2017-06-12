@@ -8,7 +8,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class TimelinePage {
 
   title:string = "Bem vindo a +55Lab.co Community, Vanessa";
-  haveImage:boolean = true;
+  imageName = "default-profile.jpeg";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

@@ -1,0 +1,113 @@
+page-tabs{
+  .tabbar, .tabs-ios, .tabs-md , .tabs-wp{
+      .tab-button-icon {
+          background-repeat:no-repeat;
+          background-position:center;
+          height:24px;
+          width:24px;
+          background-size:contain;
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          &:before {
+              display:none;
+          }
+      }
+  }
+
+  //Tabs ios
+  .tabs-ios {
+    a[aria-selected=false]{
+       .tab-button-icon[ng-reflect-name=feed], .tab-button-icon[aria-label="feed"] {
+         background-image: url(../assets/images/tabs/tab-bar-feed-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=benefits], .tab-button-icon[aria-label="benefits"] {
+         background-image: url(../assets/images/tabs/tab-bar-benefits-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=account], .tab-button-icon[aria-label="account"] {
+         background-image: url(../assets/images/tabs/tab-bar-account-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=notification], .tab-button-icon[aria-label="notification"] {
+         background-image: url(../assets/images/tabs/tab-bar-notification-deactivate.svg);
+       }
+    }
+   a[aria-selected=true] {
+      .tab-button-icon[ng-reflect-name=feed], .tab-button-icon[aria-label=feed] {
+        background-image: url(../assets/images/tabs/tab-bar-feed-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=benefits], .tab-button-icon[aria-label=benefits] {
+        background-image: url(../assets/images/tabs/tab-bar-benefits-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=account], .tab-button-icon[aria-label=account] {
+        background-image: url(../assets/images/tabs/tab-bar-account-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=notification], .tab-button-icon[aria-label=notification] {
+        background-image: url(../assets/images/tabs/tab-bar-notification-activate.svg);
+      }
+    }
+  }
+
+  //Tabs IONIC and Android
+  .tabs-md {
+    a[aria-selected=false]{
+       .tab-button-icon[ng-reflect-name=feed], .tab-button-icon[aria-label="feed"] {
+         background-image: url(../assets/images/tabs/tab-bar-feed-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=benefits], .tab-button-icon[aria-label="benefits"] {
+         background-image: url(../assets/images/tabs/tab-bar-benefits-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=account], .tab-button-icon[aria-label="account"] {
+         background-image: url(../assets/images/tabs/tab-bar-account-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=notification], .tab-button-icon[aria-label="notification"] {
+         background-image: url(../assets/images/tabs/tab-bar-notification-deactivate.svg);
+       }
+    }
+   a[aria-selected=true] {
+      .tab-button-icon[ng-reflect-name=feed], .tab-button-icon[aria-label=feed] {
+        background-image: url(../assets/images/tabs/tab-bar-feed-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=benefits], .tab-button-icon[aria-label=benefits] {
+        background-image: url(../assets/images/tabs/tab-bar-benefits-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=account], .tab-button-icon[aria-label=account] {
+        background-image: url(../assets/images/tabs/tab-bar-account-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=notification], .tab-button-icon[aria-label=notification] {
+        background-image: url(../assets/images/tabs/tab-bar-notification-activate.svg);
+      }
+    }
+  }
+
+  //Tabs Widowns Phone
+  .tabs-wp {
+    a[aria-selected=false]{
+       .tab-button-icon[ng-reflect-name=feed], .tab-button-icon[aria-label="feed"] {
+         background-image: url(../assets/images/tabs/tab-bar-feed-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=benefits], .tab-button-icon[aria-label="benefits"] {
+         background-image: url(../assets/images/tabs/tab-bar-benefits-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=account], .tab-button-icon[aria-label="account"] {
+         background-image: url(../assets/images/tabs/tab-bar-account-deactivate.svg);
+       }
+       .tab-button-icon[ng-reflect-name=notification], .tab-button-icon[aria-label="notification"] {
+         background-image: url(../assets/images/tabs/tab-bar-notification-deactivate.svg);
+       }
+    }
+   a[aria-selected=true] {
+      .tab-button-icon[ng-reflect-name=feed], .tab-button-icon[aria-label=feed] {
+        background-image: url(../assets/images/tabs/tab-bar-feed-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=benefits], .tab-button-icon[aria-label=benefits] {
+        background-image: url(../assets/images/tabs/tab-bar-benefits-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=account], .tab-button-icon[aria-label=account] {
+        background-image: url(../assets/images/tabs/tab-bar-account-activate.svg);
+      }
+      .tab-button-icon[ng-reflect-name=notification], .tab-button-icon[aria-label=notification] {
+        background-image: url(../assets/images/tabs/tab-bar-notification-activate.svg);
+      }
+    }
+  }
+}

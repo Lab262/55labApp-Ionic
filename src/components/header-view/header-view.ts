@@ -7,8 +7,7 @@ import { Component, Input, ElementRef, ViewChild, Renderer} from '@angular/core'
 export class HeaderViewComponent {
 
   @Input('title') title: any;
-  @Input('haveImage') haveImage:any;
-  @Input('imageName') imageName: any = "default-profile.jpeg";
+  @Input('imageName') imageName:any;
 
   @ViewChild('imageProfile') imageProfile:ElementRef;
 
@@ -19,12 +18,10 @@ export class HeaderViewComponent {
 
   ngAfterViewInit(){
     //Revisar essa gambira do if de boolean
-    if (this.haveImage){
+    if (this.imageName){
       this.configureHeaderTitleImage();
-      console.log("entrei no if");
     }else{
       this.configureHeaderTitle();
-      console.log("entrei no else");
     }
   }
 

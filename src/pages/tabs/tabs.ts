@@ -6,6 +6,7 @@ import { MyAccountPage } from '../my-account/my-account';
 import { NotificationsPage } from '../notifications/notifications';
 
 @Component({
+  selector: 'page-tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
