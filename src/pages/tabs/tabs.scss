@@ -2,7 +2,7 @@ page-tabs{
   .tabbar, .tabs-ios, .tabs-md , .tabs-wp{
       .tab-button-icon {
           background-repeat:no-repeat;
-          background-position:center;
+          background-position:top;
           height:24px;
           width:24px;
           background-size:contain;
@@ -18,6 +18,12 @@ page-tabs{
   //Tabs ios
   .tabs-ios {
     a[aria-selected=false]{
+        span {
+          margin-top: 6px;
+          font-size: 10px;
+          font-family: "Gotham-Book";
+          color: $colorTabInactive; //whatever colour you want to use for the text
+        }
        .tab-button-icon[ng-reflect-name=feed], .tab-button-icon[aria-label="feed"] {
          background-image: url(../assets/images/tabs/tab-bar-feed-deactivate.svg);
        }
@@ -32,6 +38,12 @@ page-tabs{
        }
     }
    a[aria-selected=true] {
+     span {
+       margin-top: 6px;
+       font-size: 10px;
+       font-family: "Gotham-Medium";
+       color: $colorTabActive; //whatever colour you want to use for the text
+     }
       .tab-button-icon[ng-reflect-name=feed], .tab-button-icon[aria-label=feed] {
         background-image: url(../assets/images/tabs/tab-bar-feed-activate.svg);
       }

@@ -42,11 +42,11 @@ $colorButtonWhite:  #F7F7F7;
 
 //Subscribe variables
 
-// tabbar
-$tabs-md-tab-text-color:          $colorTabInactive;
-$tabs-md-tab-text-color-active :  $colorTabActive;
-$tabs-md-tab-icon-color:          $colorTabInactive;
-$tabs-md-tab-icon-color-active:   $colorTabActive;
+// // tabbar
+// $tabs-md-tab-text-color:          $colorTabInactive;
+// $tabs-md-tab-text-color-active :  $colorTabActive;
+// $tabs-md-tab-icon-color:          $colorTabInactive;
+// $tabs-md-tab-icon-color-active:   $colorTabActive;
 
 // form
 $text-input-placeholder-color:	      #FFFFFF;
@@ -109,6 +109,13 @@ $text-input-placeholder-color:	      #FFFFFF;
 @font-face {
     font-family: 'Gotham-Book';
     src: url('../assets/fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../assets/fonts/Gotham-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
