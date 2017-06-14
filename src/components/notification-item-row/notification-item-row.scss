@@ -1,0 +1,38 @@
+notification-item-row {
+
+  .content {
+
+    .image {
+      margin-left: 2.1vw;
+      margin-right: 1vw;
+      height: 12vw;
+      width: 12vw;
+      border-radius: 50%;
+      box-shadow: 0 0 3px #888888;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    ion-label .label-ios, .label-md, .label{
+      margin-top: 7.4vw;
+      margin-bottom: 7.4vw;
+    }
+
+    span {
+      font-size: 3.5vw;
+      color: $colorButtonBlack;
+      font-family: "Gotham-Book";
+      line-height: 4vw;
+
+    }
+    .bold {
+      font-family: "Gotham-Bold";
+    }
+    .regular-grey{
+      color: $colorTabInactive;
+    }
+  }
+
+}
