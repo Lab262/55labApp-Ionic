@@ -1,8 +1,9 @@
 <ion-item text-wrap class="content" >
   <ion-avatar item-start>
-      <img class="image" id="imageProfile" #imageProfile>
+      <img class="image" #imageProfile>
   </ion-avatar>
   <span class="bold"> {{name}} </span>
   <span> {{text}} </span>
   <span class="regular-grey" > {{hour}} </span>
+  <button #buttonFollow ion-button item-end *ngIf="isFollow">Seguir</button>
 </ion-item>

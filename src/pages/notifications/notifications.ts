@@ -11,7 +11,6 @@ export class NotificationsPage {
   title:string = "Notificações";
   imageName = "default-profile.jpeg";
   notifications:NotificationModel[] = new Array();
-  dummyNotification:NotificationModel = new NotificationModel("Viviana Araújo","fez um comentário em seu post.","2h","default-profile.jpeg");
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -19,14 +18,13 @@ export class NotificationsPage {
 
   ngOnInit(){
     this.setDummyData();
-    console.log(this.notifications);
   }
 
   setDummyData(){
-    var notification1 = new NotificationModel("Viviana Araújo","fez um comentário em seu post.","2h",this.imageName);
-    var notification2 = new NotificationModel("Maria Luiza Reibnitz","curtiu seu post.","5h",this.imageName);
-    var notification3 = new NotificationModel("Thiago Bernades","começou a te seguir.","11h",this.imageName);
-    var notification4 = new NotificationModel("Caio Ribeiro","te citou em um post.","1d",this.imageName);
+    var notification1 = new NotificationModel("Viviana Araújo","fez um comentário em seu post.","2h",this.imageName, false);
+    var notification2 = new NotificationModel("Maria Luiza Reibnitz","curtiu seu post.","5h",this.imageName, false);
+    var notification3 = new NotificationModel("Thiago Bernades","começou a te seguir.","11h",this.imageName, true);
+    var notification4 = new NotificationModel("Caio Ribeiro","te citou em um post.","1d",this.imageName, false);
 
     this.notifications.push(notification1);
     this.notifications.push(notification2);

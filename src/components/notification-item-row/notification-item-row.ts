@@ -12,10 +12,12 @@ export class NotificationItemRowComponent {
   private text: string;
   private hour: string;
   private imageName:string;
+  private isFollow: boolean;
 
   @Input('notification') notification:any;
 
   @ViewChild('imageProfile') imageProfile:ElementRef;
+  @ViewChild('buttonFollow') buttonFollow:ElementRef;
 
   private imageUrl: string = 'url(../assets/images/';
 
@@ -33,11 +35,16 @@ export class NotificationItemRowComponent {
     this.text = this.notification.textNotification;
     this.hour = this.notification.hourNotification;
     this.imageName = this.notification.imageProfile;
+    this.isFollow = this.notification.isFollow;
   }
 
   setViewsContent(){
     this.imageUrl = this.imageUrl + this.imageName + ')';
     this.renderer.setElementStyle(this.imageProfile.nativeElement, "backgroundImage", this.imageUrl);
+
+    // if(this.isFollow==false){
+    //   this.renderer.setElementStyle(this.imageProfile.nativeElement, "visibility", "hidden");
+    // }
   }
 
 }
