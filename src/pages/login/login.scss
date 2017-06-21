@@ -1,22 +1,54 @@
 page-login {
   .background-image{
-    background-image: url('../assets/images/backgroundLogin.png');
+    background-image: url('../assets/images/login/backgroundLogin.png');
     background-repeat: no-repeat;
     background-size: cover;
+
+    .detail-left{
+      position: absolute;
+      background-image: url('../assets/images/login/ornament-detail-left.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 24vw;
+      width: 48.2vw;
+      margin:auto;
+      margin-left: 2.1vw;
+      margin-top: 28vh;
+      opacity: 0.35;
+    }
+
+    .detail-right{
+      position: absolute;
+      background-image: url('../assets/images/login/ornament-detail-right.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 21.3vw;
+      height: 45.6vw;
+      margin:auto;
+      right: 0;
+      bottom: 0;
+      opacity: 0.35;
+    }
 
     .title {
       height: auto;
       width: 75%;
       margin:auto;
       margin-left: 10.13vw;
-      margin-top: 39.28vh;
+      margin-top: 35.3vh;
       white-space: pre-line;
 
-      color: white;
-      font-family: "Gotham-Bold";
-      font-size:8.2vw;
-      line-height: 10.6vw;
-      background: clear;
+      span {
+        color: white;
+        font-family: "Gotham-Bold";
+        font-size:8.2vw;
+        line-height: 10.6vw;
+        background: clear;
+
+      }
+      .regular-blue {
+        color: $colorLightBlue;
+      }
 
     }
 
@@ -25,7 +57,7 @@ page-login {
       width: 78%;
       margin:auto;
       margin-left: 10.13vw;
-      margin-top: 6vh;
+      margin-top: 4.34vh;
       white-space: pre-line;
 
       color: white;
@@ -44,7 +76,7 @@ page-login {
       .leftButton {
         height: 6.74vh;
         width: 41vw;
-        background: black;
+        background: $colorButtonRed;
         text-transform: none;
         margin: auto;
         margin-left: 5.6vw;
@@ -53,7 +85,7 @@ page-login {
 
         color: white;
         font-family: "Gotham-Book";
-        font-size:4.1vw;
+        font-size:4.2vw;
       }
 
       .rightButton {
@@ -64,9 +96,9 @@ page-login {
         margin: auto;
         border-radius: 5px;
 
-        color: black;
+        color: $colorButtonRed;
         font-family: "Gotham-Bold";
-        font-size:4.1vw;
+        font-size:4.2vw;
 
       }
     }

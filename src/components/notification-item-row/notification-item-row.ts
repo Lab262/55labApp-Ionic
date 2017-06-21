@@ -1,6 +1,4 @@
 import { Component, Input, ElementRef, ViewChild, Renderer } from '@angular/core';
-import { NotificationModel } from "../../models/NotificationModel"
-
 
 @Component({
   selector: 'notification-item-row',
