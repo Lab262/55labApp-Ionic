@@ -30,6 +30,6 @@ export class LoginPage {
   }
 
   callAccessFormPage(valueBool: boolean){
-    this.navCtrl.push(AccessFormPage,{isFormRegister: valueBool},{animation: 'ios-transition'});
+    this.navCtrl.push(AccessFormPage,{isFormRegister: valueBool},{animation:"ios-transition"});
   }
 }

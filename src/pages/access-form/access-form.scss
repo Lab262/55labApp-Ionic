@@ -24,7 +24,7 @@ page-access-form {
     margin-top: 4.64vh;
     border: none;
 
-    color: $colorButtonBlack;
+    color: white;
     font-family: "Gotham-Book";
     font-size:3.2vw;
     text-transform: none;
@@ -32,7 +32,7 @@ page-access-form {
   }
 
   .view-detail{
-    background: black;
+    background: white;
     width: 6.4vw;
     height: 0.6vh;
     margin-left: 6.6vw;
@@ -87,7 +87,7 @@ page-access-form {
     border-radius: 5px;
     margin-top: 6vh;
 
-    color: black;
+    color: $colorButtonRed;
     font-family: "Gotham-Bold";
     font-size:4.1vw;
 
@@ -96,7 +96,7 @@ page-access-form {
   .register-button {
     height: 6.74vh;
     width: 41vw;
-    background: black;
+    background: $colorButtonRed;
     text-transform: none;
     margin: auto;
     border-radius: 5px;
