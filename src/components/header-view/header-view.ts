@@ -15,6 +15,7 @@ export class HeaderViewComponent {
   @ViewChild('spanTitle') spanTitle:ElementRef;
   @ViewChild('spanCommunity') spanCommunity:ElementRef;
   @ViewChild('spanSubtitle') spanSubtitle:ElementRef;
+  @ViewChild('buttonSearch') buttonSearch:any;
 
   private imageUrl: string = 'url(../assets/images/header-view/';
   fixedNameCommunity:string = "Community,";
@@ -51,6 +52,7 @@ export class HeaderViewComponent {
     this.renderer.setElementStyle(this.spanSubtitle.nativeElement, "font-size", "6.6vw");
   }
   hiddenHeaderSubtitle(){
+    this.renderer.setElementStyle(this.buttonSearch._elementRef.nativeElement, "visibility", "hidden");
     this.renderer.setElementStyle(this.spanCommunity.nativeElement, "visibility", "hidden");
     this.renderer.setElementStyle(this.spanSubtitle.nativeElement, "visibility", "hidden");
   }

@@ -23,7 +23,6 @@ export class NotificationItemRowComponent {
   }
 
   ngAfterViewInit(){
-    console.log("inittttttttt");
     this.setInformationsNotification();
     this.setViewsContent();
   }

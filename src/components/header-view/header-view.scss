@@ -22,18 +22,40 @@ header-view {
 
     }
 
-    .image {
+    .container-buttons{
       margin: auto;
       margin-top: 0.6vh;
       margin-right: 5.3vw;
-      height: 9.3vw;
-      width: 9.3vw;
-      border-radius: 50%;
-      box-shadow: 0 0 3px #888888;
+      display: flex;
 
-      background-repeat: no-repeat;
-      background-size: cover;
+      .button-search {
+        margin: inherit;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 6vw;
+        height: 9.3vw;
+        width: 9.3vw;
 
+        background-image: url('../assets/images/header-view/icon-search.svg');
+        background-repeat: no-repeat;
+        background-size: inherit;
+        background-position: 50%;
+
+      }
+
+      .image {
+        // margin: auto;
+        // margin-top: 0.6vh;
+        // margin-right: 5.3vw;
+        height: 9.3vw;
+        width: 9.3vw;
+        border-radius: 50%;
+        box-shadow: 0 0 3px #888888;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
     }
 
     .title {
