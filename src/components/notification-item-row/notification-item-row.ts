@@ -17,7 +17,7 @@ export class NotificationItemRowComponent {
   @ViewChild('imageProfile') imageProfile:ElementRef;
   @ViewChild('buttonFollow') buttonFollow:ElementRef;
 
-  private imageUrl: string = 'url(../assets/images/';
+  private imageUrl: string = 'url(../assets/images/header-view/';
 
   constructor(public renderer: Renderer) {
   }
@@ -39,10 +39,6 @@ export class NotificationItemRowComponent {
   setViewsContent(){
     this.imageUrl = this.imageUrl + this.imageName + ')';
     this.renderer.setElementStyle(this.imageProfile.nativeElement, "backgroundImage", this.imageUrl);
-
-    // if(this.isFollow==false){
-    //   this.renderer.setElementStyle(this.imageProfile.nativeElement, "visibility", "hidden");
-    // }
   }
 
 }

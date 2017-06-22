@@ -2,17 +2,29 @@ header-view {
 
   .content {
 
-    //position: absolute;
     top: 0;
     left: auto;
     right: auto;
     background: $colorButtonWhite;
     width: 100%;
-    height: 22.4vh;
-    padding-top: 2vh;
+    height: 26.5vh;
+    padding-top: 2.4vh;
+
+    .detail {
+      position: absolute;
+      background-image: url('../assets/images/header-view/ornament-header.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 24vw;
+      width: 48.2vw;
+      margin:auto;
+      margin-left: 2.1vw;
+
+    }
 
     .image {
       margin: auto;
+      margin-top: 0.6vh;
       margin-right: 5.3vw;
       height: 9.3vw;
       width: 9.3vw;
@@ -28,14 +40,21 @@ header-view {
       height: auto;
       width: 90%;
       margin:auto;
-      margin-top: 1.5vh;
-      white-space: pre-line;
+      margin-top: 2vh;
+      white-space: inherit;
 
-      color: $colorButtonBlack;
-      font-family: "Gotham-Bold";
-      font-size:6.6vw;
-      line-height: 10.6vw;
-      background: clear;
+      span{
+        color: $colorButtonBlack;
+        font-family: "Gotham-Bold";
+        font-size:8vw;
+        line-height: 10.6vw;
+        background: clear;
+      }
+
+      .regular-blue{
+        font-size: 6.6vw;
+        color: $colorBlue;
+      }
 
     }
 
