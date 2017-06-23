@@ -5,5 +5,7 @@
   <span class="bold"> {{name}} </span>
   <span> {{text}} </span>
   <span class="regular-grey" > {{hour}} </span>
-  <button #buttonFollow ion-button item-end *ngIf="isFollow">Seguir</button>
+  <button ion-button item-end #buttonFollow [hidden]="!isNotificationFollow" (click)="selectedFollow()">
+    {{titleButton}}
+  </button>
 </ion-item>

@@ -21,10 +21,10 @@ export class NotificationsPage {
   }
 
   setDummyData(){
-    var notification1 = new NotificationModel("Viviana Araújo","fez um comentário em seu post.","2h",this.imageName, false);
-    var notification2 = new NotificationModel("Maria Luiza Reibnitz","curtiu seu post.","5h",this.imageName, false);
+    var notification1 = new NotificationModel("Viviana Araújo","fez um comentário em seu post.","2h",this.imageName);
+    var notification2 = new NotificationModel("Maria Luiza Reibnitz","curtiu seu post.","5h",this.imageName);
     var notification3 = new NotificationModel("Thiago Bernades","começou a te seguir.","11h",this.imageName, true);
-    var notification4 = new NotificationModel("Caio Ribeiro","te citou em um post.","1d",this.imageName, false);
+    var notification4 = new NotificationModel("Caio Ribeiro","te citou em um post.","1d",this.imageName);
 
     this.notifications.push(notification1);
     this.notifications.push(notification2);

@@ -29,22 +29,23 @@ notification-item-row {
     }
     .bold {
       font-family: "Gotham-Bold";
+      color: $colorDarkBlue;
     }
     .regular-grey{
       color: $colorTabInactive;
     }
-
+    
     ion-button .button-inner, .button-ios, .button-md{
 
       span{
-        font-size:2.6vw;
+        font-size:2.66vw;
         color: white;
         font-family: "Gotham-Bold";
         line-height: normal;
         letter-spacing: 0.24px;
       }
 
-      background: black;
+      background: $colorDarkBlue;
       height: 2.7vh;
       width: 18.9vw;
       text-transform: none;
