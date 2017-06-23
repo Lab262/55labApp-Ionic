@@ -35,6 +35,9 @@ $colors: (
 $colorTabInactive: #7b7b7b;
 $colorTabActive: #fff;
 $colorLightBlue: #87A7DE;
+$colorBlue: #5A7DBB;
+$colorDarkBlue: #0A355C;
+$colorLightGrey:#E8E8E8;
 
 //Colors Buttons
 $colorButtonBlack : #1C1C1C;
@@ -52,8 +55,9 @@ $colorButtonRed: #E1495F;
 
 // form
 $text-input-placeholder-color:	      #FFFFFF;
-
-
+$list-ios-border-color:$colorLightGrey;
+$list-md-border-color:$colorLightGrey;
+$item-ios-border-padding-left: -70px;
 
 // App iOS Variables
 // --------------------------------------------------

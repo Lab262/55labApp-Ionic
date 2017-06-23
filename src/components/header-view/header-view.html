@@ -1,4 +1,12 @@
-<div class="content">
-  <div class="image" id="imageProfile" #imageProfile ></div>
-  <ion-label class="title" id="title">{{title}}</ion-label>
+<div class="content" #content>
+  <div class="detail"></div>
+  <div class="container-buttons">
+    <button ion-button block clear item-right #buttonSearch class="button-search"></button>
+    <div class="image" id="imageProfile" #imageProfile></div>
+  </div>
+  <ion-label class="title" id="title">
+    <span #spanTitle> {{title}} </span>
+    <span class="regular-blue" #spanCommunity> {{fixedNameCommunity}} </span>
+    <span #spanSubtitle> {{subtitle}} </span>
+  </ion-label>
 </div>
