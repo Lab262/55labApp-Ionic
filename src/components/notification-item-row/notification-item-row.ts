@@ -1,4 +1,4 @@
-import { Component, Input, ElementRef, ViewChild, Renderer, ViewContainerRef} from '@angular/core';
+import { Component, Input, ElementRef, ViewChild, Renderer} from '@angular/core';
 
 @Component({
   selector: 'notification-item-row',
@@ -56,7 +56,6 @@ export class NotificationItemRowComponent {
       this.renderer.setElementStyle(this.buttonFollow._elementRef.nativeElement, "background", "#E1495F");
     }else{
       this.titleButton = "Seguir";
-      this.renderer.setElementStyle(this.buttonFollow._elementRef.nativeElement, "animation-name", "bounceIn");
       this.renderer.setElementStyle(this.buttonFollow._elementRef.nativeElement, "background", "#0A355C");
     }
   }
