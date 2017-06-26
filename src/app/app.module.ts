@@ -16,6 +16,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ParseProvider } from '../providers/parse/parse';
 import { HeaderViewComponent } from '../components/header-view/header-view';
 import { NotificationItemRowComponent } from '../components/notification-item-row/notification-item-row';
+import { ImageHeaderComponent } from '../components/image-header/image-header';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NotificationItemRowComponent } from '../components/notification-item-ro
     LoginPage,
     AccessFormPage,
     HeaderViewComponent,
-    NotificationItemRowComponent
+    NotificationItemRowComponent,
+    ImageHeaderComponent
   ],
   imports: [
     BrowserModule,
