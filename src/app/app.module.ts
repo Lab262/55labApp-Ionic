@@ -17,6 +17,7 @@ import { ParseProvider } from '../providers/parse/parse';
 import { HeaderViewComponent } from '../components/header-view/header-view';
 import { NotificationItemRowComponent } from '../components/notification-item-row/notification-item-row';
 import { ImageHeaderComponent } from '../components/image-header/image-header';
+import { BenefitItemRowComponent } from '../components/benefit-item-row/benefit-item-row';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ImageHeaderComponent } from '../components/image-header/image-header';
     AccessFormPage,
     HeaderViewComponent,
     NotificationItemRowComponent,
-    ImageHeaderComponent
+    ImageHeaderComponent,
+    BenefitItemRowComponent
   ],
   imports: [
     BrowserModule,
