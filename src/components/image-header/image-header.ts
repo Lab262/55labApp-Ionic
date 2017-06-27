@@ -1,22 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, Renderer, Input, ElementRef, ViewChild } from '@angular/core';
 
-/**
- * Generated class for the ImageHeaderComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
 @Component({
   selector: 'image-header',
   templateUrl: 'image-header.html'
 })
 export class ImageHeaderComponent {
 
-  text: string;
+  private title: string;
+  private subtitle: string;
+  private imageName:string;
 
-  constructor() {
-    console.log('Hello ImageHeaderComponent Component');
-    this.text = 'Hello World';
+  @Input('benefit') benefit:any;
+
+  @ViewChild('imageBenefit') imageBenefit:ElementRef;
+
+  private imageUrl: string = 'url(../assets/images/benefits/';
+
+  constructor(public renderer: Renderer) {
+  }
+
+  ngAfterViewInit(){
+    this.setInformationsNotification();
+    this.setViewsContent();
+  }
+
+  setInformationsNotification(){
+    this.title = this.benefit.name;
+    this.subtitle = this.benefit.type;
+    this.imageName = this.benefit.imageName;
+  }
+
+  setViewsContent(){
+    this.imageUrl = this.imageUrl + this.imageName + ')';
+    this.renderer.setElementStyle(this.imageBenefit.nativeElement, "backgroundImage", this.imageUrl);
   }
 
 }

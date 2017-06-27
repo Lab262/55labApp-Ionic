@@ -1,3 +1,80 @@
 image-header {
 
+  .content {
+
+    height: 25.2vh;
+    width: 100%;
+
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.6)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+
+    .image {
+
+      position: absolute;
+      z-index: -1;
+
+      height: 25.2vh;
+      width: 100%;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .title {
+
+      height: auto;
+      width: auto;
+      margin:auto;
+      padding-top: 12.15vh;
+      padding-left: 8vw;
+      white-space: inherit;
+
+      color: white;
+      font-family: "BebasNeue-Bold";
+      font-size:8vw;
+      background: clear;
+
+    }
+    .subtitle {
+
+      height: auto;
+      width: auto;
+      margin:auto;
+      white-space: inherit;
+      margin-top: 1.5vh;
+      margin-left: 8vw;
+
+
+      color: white;
+      font-family: "Gotham-Book";
+      font-size:4.2vw;
+      background: clear;
+    }
+  }
+
+  .detail-image {
+
+    position: absolute;
+    display: inline-block;
+
+    height: 20.3vw;
+    width: 20.3vw;
+    margin: auto;
+    right: 0;
+    margin-right: 2.7vw;
+    margin-top: -15vw;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../assets/images/benefits/detail-image-header.svg');
+
+  }
+
+
+
 }

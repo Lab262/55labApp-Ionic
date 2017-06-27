@@ -1,3 +1,7 @@
 <ion-content>
   <header-view title="{{title}}"></header-view>
+  <ion-list>
+    <image-header  *ngFor="let item of benefits" [benefit]=item>
+    </image-header>
+  </ion-list>
 </ion-content>
