@@ -10,6 +10,8 @@ title-detail {
     white-space: inherit;
 
     color: $colorButtonBlack;
+    font-family: "Gotham-Book";
+    font-size: "3.73vw";
     background: clear;
 
   }
@@ -20,6 +22,7 @@ title-detail {
     margin-left: 8vw;
     width: 13.8vw;
     height: 4px;
+    background: $colorDarkBlue;
   }
 
 }

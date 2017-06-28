@@ -22,11 +22,15 @@ export class TitleDetailComponent {
   }
 
   setViewsContent(){
-    this.renderer.setElementStyle(this.titleLabel.nativeElement, "font-family", this.fontName);
-    this.renderer.setElementStyle(this.titleLabel.nativeElement, "font-size", this.fontSize);
-    console.log(this.detail);
-    console.log(this.backgroundColor);
-    this.renderer.setElementStyle(this.detail.nativeElement, "background", this.backgroundColor);
+    if (this.fontName!=null){
+      this.renderer.setElementStyle(this.titleLabel.nativeElement, "font-family", this.fontName);
+    }
+    if (this.fontSize!=null){
+      this.renderer.setElementStyle(this.titleLabel.nativeElement, "font-size", this.fontSize);
+    }
+    if (this.backgroundColor!=null){
+      this.renderer.setElementStyle(this.detail.nativeElement, "background", this.backgroundColor);
+    }
   }
 
 }
