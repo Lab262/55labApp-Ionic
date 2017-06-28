@@ -19,6 +19,7 @@ import { NotificationItemRowComponent } from '../components/notification-item-ro
 import { ImageHeaderComponent } from '../components/image-header/image-header';
 import { BenefitItemRowComponent } from '../components/benefit-item-row/benefit-item-row';
 import { TitleDetailComponent } from '../components/title-detail/title-detail';
+import { TextDynamicComponent } from '../components/text-dynamic/text-dynamic';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TitleDetailComponent } from '../components/title-detail/title-detail';
     NotificationItemRowComponent,
     ImageHeaderComponent,
     BenefitItemRowComponent,
-    TitleDetailComponent
+    TitleDetailComponent,
+    TextDynamicComponent
   ],
   imports: [
     BrowserModule,
