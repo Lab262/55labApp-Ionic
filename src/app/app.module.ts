@@ -20,6 +20,7 @@ import { ImageHeaderComponent } from '../components/image-header/image-header';
 import { BenefitItemRowComponent } from '../components/benefit-item-row/benefit-item-row';
 import { TitleDetailComponent } from '../components/title-detail/title-detail';
 import { TextDynamicComponent } from '../components/text-dynamic/text-dynamic';
+import { ActionScrollerComponent } from '../components/action-scroller/action-scroller';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TextDynamicComponent } from '../components/text-dynamic/text-dynamic';
     ImageHeaderComponent,
     BenefitItemRowComponent,
     TitleDetailComponent,
-    TextDynamicComponent
+    TextDynamicComponent,
+    ActionScrollerComponent
   ],
   imports: [
     BrowserModule,
