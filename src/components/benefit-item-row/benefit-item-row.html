@@ -2,4 +2,7 @@
   <image-header [benefit]="benefit"></image-header>
   <title-detail title="{{benefit.shortDescription}}"></title-detail>
   <text-dynamic text="{{benefit.longDescription}}"></text-dynamic>
+  <button ion-button #buttonShowBenefit (click)="selectBenefit()">
+    {{titleButton}}
+  </button>
 </div>
