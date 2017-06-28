@@ -20,11 +20,11 @@ export class BenefitsPage {
   }
 
   setDummyData(){
-    var benefit1 = new BenefitModel("BE FREE","Seguro de vida",this.imageName);
-    var benefit2 = new BenefitModel("ACADEMIA 4e20","Vida fitness",this.imageName);
+    var benefit1 = new BenefitModel("BE FREE","Seguro de vida",this.imageName, "Desconto de 30% no Seguros Bradesco");
+    var benefit2 = new BenefitModel("PLANO ACADEMIA","Vida fitness",this.imageName, "Desconto de 15% na Academia 4e20");
 
     this.benefits.push(benefit1);
-    this.benefits.push(benefit2);
+    //this.benefits.push(benefit2);
   }
 
 }

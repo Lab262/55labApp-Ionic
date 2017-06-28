@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'title-detail',
@@ -6,11 +6,27 @@ import { Component } from '@angular/core';
 })
 export class TitleDetailComponent {
 
-  text: string;
+  @Input('title') title:any;
+  @Input('fontName') fontName:any;
+  @Input('fontSize') fontSize:any;
+  @Input('backgroundColor') backgroundColor:any;
 
-  constructor() {
-    console.log('Hello TitleDetailComponent Component');
-    this.text = 'Hello World';
+  @ViewChild('titleLabel') titleLabel:ElementRef;
+  @ViewChild('detail') detail:ElementRef;
+
+  constructor(public renderer: Renderer) {
+  }
+
+  ngAfterViewInit(){
+    this.setViewsContent();
+  }
+
+  setViewsContent(){
+    this.renderer.setElementStyle(this.titleLabel.nativeElement, "font-family", this.fontName);
+    this.renderer.setElementStyle(this.titleLabel.nativeElement, "font-size", this.fontSize);
+    console.log(this.detail);
+    console.log(this.backgroundColor);
+    this.renderer.setElementStyle(this.detail.nativeElement, "background", this.backgroundColor);
   }
 
 }

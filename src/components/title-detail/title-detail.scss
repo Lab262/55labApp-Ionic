@@ -1,3 +1,25 @@
 title-detail {
 
+  .title {
+
+    height: auto;
+    width: 84%;
+    margin:auto;
+    margin-top: 4.5vh;
+    margin-left: 8vw;
+    white-space: inherit;
+
+    color: $colorButtonBlack;
+    background: clear;
+
+  }
+
+  .detail{
+    margin:auto;
+    margin-top: 1.5vh;
+    margin-left: 8vw;
+    width: 13.8vw;
+    height: 4px;
+  }
+
 }
