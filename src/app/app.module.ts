@@ -18,6 +18,7 @@ import { HeaderViewComponent } from '../components/header-view/header-view';
 import { NotificationItemRowComponent } from '../components/notification-item-row/notification-item-row';
 import { ImageHeaderComponent } from '../components/image-header/image-header';
 import { BenefitItemRowComponent } from '../components/benefit-item-row/benefit-item-row';
+import { TitleDetailComponent } from '../components/title-detail/title-detail';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BenefitItemRowComponent } from '../components/benefit-item-row/benefit-
     HeaderViewComponent,
     NotificationItemRowComponent,
     ImageHeaderComponent,
-    BenefitItemRowComponent
+    BenefitItemRowComponent,
+    TitleDetailComponent
   ],
   imports: [
     BrowserModule,
