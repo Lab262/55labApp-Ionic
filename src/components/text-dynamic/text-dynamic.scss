@@ -1,3 +1,19 @@
 text-dynamic {
 
+  .text {
+
+    height: auto;
+    width: 88%;
+    margin:auto;
+    margin-top: 3vh;
+    margin-left: 8vw;
+    white-space: inherit;
+
+    color: $colorButtonBlack;
+    font-family: "Aleo-Regular";
+    font-size: "3.73vw";
+    background: clear;
+    line-height: "6.4vw";
+  }
+
 }

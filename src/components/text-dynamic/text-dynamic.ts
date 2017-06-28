@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Renderer, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'text-dynamic',
@@ -6,11 +6,22 @@ import { Component } from '@angular/core';
 })
 export class TextDynamicComponent {
 
-  text: string;
+  @Input('text') text:any;
+  @Input('fontSize') fontSize:any;
 
-  constructor() {
-    console.log('Hello TextDynamicComponent Component');
-    this.text = 'Hello World';
+  @ViewChild('textLabel') textLabel:ElementRef;
+
+  constructor(public renderer: Renderer) {
+  }
+
+  ngAfterViewInit(){
+    this.setViewsContent();
+  }
+
+  setViewsContent(){
+    if (this.fontSize!=null){
+      this.renderer.setElementStyle(this.textLabel.nativeElement, "font-size", this.fontSize);
+    }
   }
 
 }
