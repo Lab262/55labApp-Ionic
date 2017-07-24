@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Renderer, Input } from '@angular/core';
+import { TypeBenefitModel } from "../../models/TypeBenefitModel"
 
 @Component({
   selector: 'action-scroller',
@@ -6,11 +7,21 @@ import { Component } from '@angular/core';
 })
 export class ActionScrollerComponent {
 
-  text: string;
+  @Input('typesBenefit') typesBenefit:any;
 
-  constructor() {
-    console.log('Hello ActionScrollerComponent Component');
-    this.text = 'Hello World';
+  constructor(public renderer: Renderer) {
+  }
+
+  ngOnInit(){
+    this.setDefaultTypeFilter();
+  }
+
+  setDefaultTypeFilter(){
+    var allType = new TypeBenefitModel("Todos");
+    this.typesBenefit.unshift(allType);
+  }
+
+  selectTypeBenefit(){
   }
 
 }

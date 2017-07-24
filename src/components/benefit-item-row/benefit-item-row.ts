@@ -9,14 +9,14 @@ export class BenefitItemRowComponent {
 
   @Input('benefit') benefit:any;
 
-  private titleButton = "Solicitar";
+  titleButton = "Solicitar";
 
 
   constructor(public renderer: Renderer) {
   }
 
   selectBenefit(){
-    
+
   }
 
 }

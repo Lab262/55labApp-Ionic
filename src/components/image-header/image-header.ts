@@ -20,13 +20,13 @@ export class ImageHeaderComponent {
   }
 
   ngAfterViewInit(){
-    this.setInformationsNotification();
+    this.setInformationsImageHeader();
     this.setViewsContent();
   }
 
-  setInformationsNotification(){
+  setInformationsImageHeader(){
     this.title = this.benefit.name;
-    this.subtitle = this.benefit.type;
+    this.subtitle = this.benefit.type.name;
     this.imageName = this.benefit.imageName;
   }
 

@@ -1,7 +1,9 @@
+import { TypeBenefitModel } from "../models/TypeBenefitModel";
+
 export class BenefitModel {
 
     constructor(public name: string,
-      public type: string,
+      public type: TypeBenefitModel,
       public imageName: string,
       public shortDescription:string,
       public longDescription:string){

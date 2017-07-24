@@ -1,5 +1,6 @@
 <ion-content class="content">
   <header-view title="{{title}}"></header-view>
+  <action-scroller [typesBenefit]=typesBenefit></action-scroller>
   <ion-list>
     <benefit-item-row  *ngFor="let item of benefits" [benefit]=item>
     </benefit-item-row>
