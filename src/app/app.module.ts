@@ -10,6 +10,7 @@ import { TimelinePage } from '../pages/timeline/timeline';
 import { BenefitsPage } from '../pages/benefits/benefits';
 import { MyAccountPage } from '../pages/my-account/my-account';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { BenefitDetailPage } from '../pages/benefit-detail/benefit-detail';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,6 +33,7 @@ import { ActionScrollerComponent } from '../components/action-scroller/action-sc
     NotificationsPage,
     LoginPage,
     AccessFormPage,
+    BenefitDetailPage,
     HeaderViewComponent,
     NotificationItemRowComponent,
     ImageHeaderComponent,
@@ -53,7 +55,8 @@ import { ActionScrollerComponent } from '../components/action-scroller/action-sc
     MyAccountPage,
     NotificationsPage,
     LoginPage,
-    AccessFormPage
+    AccessFormPage,
+    BenefitDetailPage
   ],
   providers: [
     StatusBar,

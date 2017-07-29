@@ -1,4 +1,6 @@
 import { Component, Input, Renderer} from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { BenefitDetailPage } from '../../pages/benefit-detail/benefit-detail';
 
 
 @Component({
@@ -12,11 +14,11 @@ export class BenefitItemRowComponent {
   titleButton = "Solicitar";
 
 
-  constructor(public renderer: Renderer) {
+  constructor(public renderer: Renderer, public navCtrl:NavController) {
   }
 
   selectBenefit(){
-
+    this.navCtrl.parent.parent.push(BenefitDetailPage,{benefit: this.benefit},{animation:"ios-transition"});
   }
 
 }
