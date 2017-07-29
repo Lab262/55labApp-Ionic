@@ -1,5 +1,5 @@
 <div class="content">
-  <button ion-button (click)="selectTypeBenefit()" class="button" *ngFor="let item of typesBenefit">
+  <button ion-button (click)="selectTypeBenefit(item)" class="button" *ngFor="let item of typesBenefit">
     {{item.name}}
   </button>
 </div>

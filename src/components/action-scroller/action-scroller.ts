@@ -8,6 +8,7 @@ import { TypeBenefitModel } from "../../models/TypeBenefitModel"
 export class ActionScrollerComponent {
 
   @Input('typesBenefit') typesBenefit:any;
+  selectedTypeBenefit: TypeBenefitModel;
 
   constructor(public renderer: Renderer) {
   }
@@ -19,9 +20,13 @@ export class ActionScrollerComponent {
   setDefaultTypeFilter(){
     var allType = new TypeBenefitModel("Todos");
     this.typesBenefit.unshift(allType);
+    this.selectedTypeBenefit = allType;
   }
 
-  selectTypeBenefit(){
+  selectTypeBenefit(typeBenefit: TypeBenefitModel){
+    this.selectedTypeBenefit = typeBenefit;
+    this.typesBenefit.shift();
+    this.typesBenefit.unshift(this.selectedTypeBenefit);
   }
 
 }
