@@ -22,6 +22,7 @@ import { BenefitItemRowComponent } from '../components/benefit-item-row/benefit-
 import { TitleDetailComponent } from '../components/title-detail/title-detail';
 import { TextDynamicComponent } from '../components/text-dynamic/text-dynamic';
 import { ActionScrollerComponent } from '../components/action-scroller/action-scroller';
+import { HeaderViewDetailComponent } from '../components/header-view-detail/header-view-detail';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ActionScrollerComponent } from '../components/action-scroller/action-sc
     BenefitItemRowComponent,
     TitleDetailComponent,
     TextDynamicComponent,
-    ActionScrollerComponent
+    ActionScrollerComponent,
+    HeaderViewDetailComponent
   ],
   imports: [
     BrowserModule,
