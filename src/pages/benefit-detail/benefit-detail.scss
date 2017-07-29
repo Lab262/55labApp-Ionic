@@ -1,3 +1,97 @@
 page-benefit-detail {
 
+  .content {
+    background: $colorButtonWhite;
+  }
+
+  form {
+    background: clear;
+    width: 81%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+
+    ion-input {
+      background: clear;
+      padding-left: 22vw;
+      padding-right: 2vw;
+      margin-top: 6vh;
+
+      color: $colorButtonBlack;
+      font-family: "Gotham-Book";
+      font-size:3.73vw;
+      text-transform: none;
+    }
+
+    ion-textarea {
+
+      margin-left: -8%;
+      width: 116%;
+      height: 18.4vh;
+      background: $colorLightGrey;
+      padding-top: 1vh;
+      padding-left: 4vw;
+      padding-right: 2vw;
+      margin-top: 1.5vh;
+      line-height: 2.5vh;
+      color: $colorButtonBlack;
+      font-family: "Gotham-Book";
+      font-size:3.73vw;
+    }
+
+    .placeholder {
+      position: absolute;
+      margin-top: -3.6vh;
+
+      font-family: "Gotham-Light";
+      font-size: 3.73vw;
+      color: $colorTabInactive;
+      letter-spacing: 0;
+    }
+
+    .placeholder-dynamic {
+      margin-top: 6vh;
+      font-family: "Gotham-Book";
+      font-size: 3.73vw;
+      color: $colorTabInactive;
+      letter-spacing: 0;
+    }
+
+    .detail-line {
+      border-bottom: 1px solid $colorTabInactive;
+    }
+  }
+
+  .button-request {
+    width: 34%;
+    height: 5vh;
+
+    margin: auto;
+    margin-top: 6vh;
+    margin-bottom: 5.2vh;
+
+    background: $colorDarkBlue;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.20);
+    border-radius: 1.62px;
+
+    font-family: "Gotham-Bold";
+    font-size: 3.73vw;
+    color: white;
+    letter-spacing: 0.088vw;
+  }
+
+  //Change color placeholder
+  .text-input::-moz-placeholder {
+    color: $colorTabInactive;
+  }
+
+  .text-input:-ms-input-placeholder {
+    color: $colorTabInactive;
+  }
+
+  .text-input::-webkit-input-placeholder {
+    text-indent: 0;
+    color: $colorTabInactive;
+  }
+
 }

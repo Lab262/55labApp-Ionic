@@ -1,4 +1,44 @@
-<div>
+<ion-content class="content">
   <header-view-detail> </header-view-detail>
   <image-header [benefit]="benefit"></image-header>
-</div>
+
+  <form [formGroup]="requestBenefitForm" novalidate >
+
+    <ion-input formControlName="name" type="text" margin-top="0" placeholder={{dummyName}}
+    [class.invalid]="!requestBenefitForm.controls.name.valid && requestBenefitForm.controls.name.dirty">
+    </ion-input>
+    <div class="placeholder">
+      {{placeholderName}}
+    </div>
+    <div class="detail-line"></div>
+
+    <ion-input formControlName="email" type="email" placeholder={{dummyEmail}}
+    [class.invalid]="!requestBenefitForm.controls.email.valid && requestBenefitForm.controls.email.dirty">
+    </ion-input>
+    <div class="placeholder">
+      {{placeholderEmail}}
+    </div>
+    <div class="detail-line"></div>
+
+    <ion-input formControlName="phoneNumber" type="tel" placeholder={{dummyPhoneNumber}}
+    [class.invalid]="!requestBenefitForm.controls.phoneNumber.valid && requestBenefitForm.controls.phoneNumber.dirty">
+    </ion-input>
+    <div class="placeholder">
+      {{placeholderPhoneNumber}}
+    </div>
+    <div class="detail-line"></div>
+
+    <div class="placeholder-dynamic">
+      {{titleInterest}}
+    </div>
+    <ion-textarea formControlName="interest" type="text" rows="5" placeholder={{placeholderInterest}}
+    [class.invalid]="!requestBenefitForm.controls.interest.valid && requestBenefitForm.controls.interest.dirty">
+    </ion-textarea>
+
+  </form>
+
+  <button ion-button block clear type="submit" class="button-request" (click)="requestBenefit()">
+    {{titleButtonRequest}}
+  </button>
+
+</ion-content>
